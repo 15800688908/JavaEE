@@ -1,0 +1,7 @@
+package cn.itcast.mydbutils;
+
+public class MyBeanHandler implements MyResultSetHandler {
+	public Object handle(ResultSet rs) throws SQLException {
+
+	}
+}

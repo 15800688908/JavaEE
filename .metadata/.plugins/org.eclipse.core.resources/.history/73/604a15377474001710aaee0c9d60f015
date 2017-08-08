@@ -1,0 +1,14 @@
+package cn.itcast.customer.service;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import cn.itcast.customer.dao.CustomerDao;
+import cn.itcast.customer.domain.Customer;
+
+public class CustomerService {
+	private CustomerDao dao=new CustomerDao();
+public List<Customer> findAll()throws SQLException{
+	return dao.findAll();
+}
+}

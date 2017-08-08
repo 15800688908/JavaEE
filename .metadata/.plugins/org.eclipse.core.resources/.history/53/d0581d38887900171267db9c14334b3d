@@ -1,0 +1,7 @@
+package cn.itcast.web.filter;
+
+import javax.servlet.Filter;
+
+public class AutoLoginFilter implements Filter {
+
+}

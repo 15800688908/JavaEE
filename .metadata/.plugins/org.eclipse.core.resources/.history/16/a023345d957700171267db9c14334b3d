@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+<filter>
+<filter-name>demoFilter</filter-name>
+<filter-class>cn.itcast.web.filter.DemoFilter</filter-class>
+</filter>
+<filter-mapping>
+<filter-name>demoFilter</filter-name>
+<url-pattern>/index.jsp</url-pattern>
+</filter-mapping>
+</web-app>

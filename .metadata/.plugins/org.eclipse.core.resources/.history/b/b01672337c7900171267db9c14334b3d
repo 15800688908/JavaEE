@@ -1,0 +1,15 @@
+package cn.itcast.dao.impl;
+
+import java.util.List;
+
+import cn.itcast.dao.IEmployeeDao;
+import cn.itcast.entity.Employee;
+
+public class EmployeeDao implements IEmployeeDao {
+
+	public List<Employee> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

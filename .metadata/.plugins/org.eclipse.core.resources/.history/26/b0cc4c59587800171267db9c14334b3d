@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<filter>
+		<filter-name>demoFilter</filter-name>
+		<filter-class>cn.itcast.web.filter.DemoFilter</filter-class>
+		<!-- 初始化参数 -->
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>demoFilter</filter-name>
+		<url-pattern>/index.jsp</url-pattern>
+	</filter-mapping>
+
+	<!-- servletDemo配置 -->
+</web-app>

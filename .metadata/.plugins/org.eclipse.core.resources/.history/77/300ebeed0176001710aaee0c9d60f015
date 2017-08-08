@@ -1,0 +1,6 @@
+package cn.itcast.listener.demo;
+
+//用于监听session对象创建，如果创建了，将其保存到一个集合中
+public class MyHttpSessionListener {
+
+}

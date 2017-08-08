@@ -1,0 +1,22 @@
+package cn.itcast.web.filter;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.security.Principal;
+import java.util.Enumeration;
+import java.util.Locale;
+import java.util.Map;
+import javax.servlet.http.HttpServletRequestWrapper;
+import javax.servlet.http.HttpServletRequest;
+
+public class MyRequest extends HttpServletRequestWrapper {
+	private HttpServletRequest request;
+
+	public MyRequest(HttpServletRequest request) {
+		super(request);
+		// 父类没有无参构造
+		this.request = request;
+	}
+
+}

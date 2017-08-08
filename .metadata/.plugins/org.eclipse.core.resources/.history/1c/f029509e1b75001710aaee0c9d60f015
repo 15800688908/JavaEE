@@ -1,0 +1,10 @@
+满足特定条件的时候执行一个操作
+java web中监听器主要用于监听
+request(HttpServletRequest)，session(HttpSession),
+application(ServletContext)的
+三种类型操作
+1.对象的创建与销毁
+2.对象的属性变化
+3.session绑定javaBean
+
+在java web中servlet规范中定义了三种技术 servlet Listener Filter

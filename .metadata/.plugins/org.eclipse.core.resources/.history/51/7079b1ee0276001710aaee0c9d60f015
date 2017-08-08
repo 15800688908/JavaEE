@@ -1,0 +1,23 @@
+package cn.itcast.listener.demo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+import javax.servlet.http.HttpSession;
+
+public class MyServletContextListener implements ServletContextListener {
+	private List<HttpSession> sessions = new ArrayList<HttpSession>();
+
+	public void contextDestroyed(ServletContextEvent sce) {
+		// 
+
+	}
+
+	public void contextInitialized(ServletContextEvent sce) {
+		// 执行说明项目启动了
+
+	}
+
+}

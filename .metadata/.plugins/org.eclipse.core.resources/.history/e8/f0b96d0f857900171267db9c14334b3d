@@ -1,0 +1,8 @@
+package cn.itcast.entity;
+
+public class User {
+	private int id;
+	private String username;
+	private String password;
+	private int role;
+}

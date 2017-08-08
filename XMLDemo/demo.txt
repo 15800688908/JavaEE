@@ -1,0 +1,49 @@
+JAXP解析XML :
+	DOM: DocumentBuilderFactory 解析器工厂类
+		DocumentBuilder    获取解析器对象
+		解析XML （Document parse(String uri))   
+		
+Schema约束：
+	Schema符合XML的语法结构		
+	可以解析schema文档
+	schema对名称空间支持很好   java.util.list
+	支持用户自定义数据类型
+	
+	预先定义元素和属性
+	schema的后缀名.xsd
+	根节点名称是schema
+	schema文档是约束文档 xml是实例文档
+	
+名称空间 
+	编写玩schema文档，起唯一的名称空间
+	在编写xml文档时，通过xmlns引入
+	
+XML的编程
+	JAXP的SAX解析
+	只能做查询，不能做增删改查
+		解析器
+			获取解析器的工厂，获取解析器对象，解析XML（xml的文件地址，事件处理器）
+		事件处理器
+			自己编写类，继承DefaultHandler,重写三个方法。
+			startElement()
+			characters()
+			endElement()
+			把自己编写的事件处理器，传入进去
+			只要是读到开始标签，默认调用该方法，把解析的内容赋值给qName,
+			如果有属性，把属性赋值给attributes。继续调用文本内容，结束标签
+
+DOM4J的解析
+	需要jar包
+	web项目直接把jar包复制到webroot/web-inf/lib下面
+	如果是Java项目，要先创建文件夹然后复制，还要build path
+DOM4J对XPATH的支持
+	导入包，jaxen	
+	怎么使用
+	selectNodes("/aaa/ccc");返回集合
+	selectSingleNode();
+	参数就是XPATH的语法  /aaa/ccc 获取bbb的节点
+	//bbb 无论层级关系，找到bbb
+	/AAA/BBB[1] 第一个   /bbb[@id] @属性的意思
+扩展
+	
+			

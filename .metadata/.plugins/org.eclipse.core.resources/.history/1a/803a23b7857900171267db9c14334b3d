@@ -1,0 +1,12 @@
+package cn.itcast.dao;
+
+import cn.itcast.entity.User;
+import cn.itcast.utils.*;
+
+public class UserDao {
+	public User findByNameAndPwd(String username, String password) {
+		String sql = "";
+		return JdbcUtils.getQueryRuner().query(sql,
+				new BeanHandler<User>(User.class));
+	}
+}

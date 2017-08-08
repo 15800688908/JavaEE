@@ -1,0 +1,7 @@
+package cn.itcast.entity;
+
+public class Employee {
+	private int id;
+	private String empName;
+	private int dept;
+}

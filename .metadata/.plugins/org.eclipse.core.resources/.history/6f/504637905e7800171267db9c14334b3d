@@ -1,0 +1,67 @@
+package cn.itcast.web.filter;
+
+import java.io.IOException;
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.FilterConfig;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class EncodingFilter implements Filter {
+
+	public void destroy() {
+
+	}
+
+	public void doFilter(ServletRequest req, ServletResponse res,
+			FilterChain chain) throws IOException, ServletException {
+		// 转型
+		final HttpServletRequest request = (HttpServletRequest) req;// post有效
+		HttpServletResponse response = (HttpServletResponse) res;
+
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html;charset=UTF-8");
+
+		/**
+		 * 出现Get中文乱码，是因为request.getParameter()没判断 对接口中的某一个方法进行扩展，创建代理对象
+		 */
+		Proxy.newProxyInstance(request.getClass().getClassLoader(),
+				new Class[] { HttpServletRequest.class },
+				new InvocationHandler() {
+					public Object invoke(Object proxy, Method method,
+							Object[] args) throws Throwable {
+						Object returnValue = null;
+						String methodName = method.getName();
+						if ("getParameter".equals(methodName)) {
+							// 判断是否是GET提交，处理数据
+							String value = request.getParameter(args[0]
+									.toString());
+							String methodSubmit = request.getMethod();
+							if ("GET".equals(methodSubmit)) {
+								value = new String(value.getBytes("ISO8859-1"),
+										"utf-8");
+							}
+						} else {
+							returnValue = method.invoke(request, args);
+						}
+						return null;
+					}
+				});
+		// 对目标对象实现的接口类型
+		// 放行
+		chain.doFilter(request, response);// 传入代理对象
+
+	}
+
+	public void init(FilterConfig filterConfig) throws ServletException {
+
+	}
+
+}

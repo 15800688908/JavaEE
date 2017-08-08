@@ -1,0 +1,14 @@
+package cn.itcast.service.impl;
+
+import java.util.List;
+
+import cn.itcast.entity.Employee;
+import cn.itcast.service.IEmployeeService;
+
+public class EmployeeService implements IEmployeeService {
+
+	public List<Employee> getAll() {
+		return null;
+	}
+
+}

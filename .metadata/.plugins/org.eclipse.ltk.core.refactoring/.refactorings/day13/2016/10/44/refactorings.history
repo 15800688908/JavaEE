@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;/day13/WebRoot/tag/tag,jsp.jsp&apos; to &apos;tag,jsp&apos;&#x0D;&#x0A;- Original project: &apos;day13&apos;&#x0D;&#x0A;- Original element: &apos;tag,jsp.jsp&apos;" description="Rename resource &apos;tag,jsp.jsp&apos;" flags="7" id="org.eclipse.jdt.ui.rename.resource" input="WebRoot/tag/tag,jsp.jsp" name="tag,jsp" stamp="1477227944956" version="1.0"/>
+</session>

@@ -1,0 +1,61 @@
+package cn.itcast.customer.service;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import cn.itcast.customer.dao.CustomerDao;
+import cn.itcast.customer.domain.Customer;
+import cn.itcast.customer.domain.PageBean;
+
+public class CustomerService {
+	private CustomerDao dao = new CustomerDao();
+
+	public List<Customer> findAll() throws SQLException {
+		return dao.findAll();
+	}
+
+	public void delById(String id) throws SQLException {
+		dao.deleById(id);
+
+	}
+
+	public Customer findById(String id) throws SQLException {
+
+		return dao.findById(id);
+	}
+
+	public void update(Customer c) throws SQLException {
+		dao.update(c);
+
+	}
+
+	public void add(Customer c) throws SQLException {
+		dao.add(c);
+	}
+
+	public void delSel(String[] id) throws SQLException {
+		dao.delSel(id);
+
+	}
+
+	public List<Customer> simpleSel(String field, String msg)
+			throws SQLException {
+		return dao.simpelSel(field, msg);
+
+	}
+
+	public PageBean findByPage(int pageNum, int currentPage)
+			throws SQLException {
+		PageBean pb = new PageBean();
+
+		List<Customer> cs = dao.findByPage(pageNum, currentPage);
+		int totalCount = dao.findAllCount();
+		int totalPage = (int) Math.ceil(totalCount * 1.0 / currentPage);
+		pb.setTotalCount(totalCount);
+		pb.setTotalPage(totalPage);
+		pb.setCs(cs);
+		pb.setCurrentPage(currentPage);
+		pb.setPageNum(pageNum);
+		return pb;
+	}
+}

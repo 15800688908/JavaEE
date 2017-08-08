@@ -1,0 +1,24 @@
+package cn.itcast.mydbutils;
+
+import java.beans.BeanInfo;
+import java.beans.IntrospectionException;
+import java.beans.Introspector;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class MyBeanHandler implements MyResultSetHandler {
+	private Class clazz;
+
+	public MyBeanHandler(Class clazz) {
+		this.clazz = clazz;
+	}
+
+	public Object handle(ResultSet rs) throws SQLException {
+		try {
+			BeanInfo bif = Introspector.getBeanInfo(clazz);
+		} catch (IntrospectionException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 1 elements(s) to &apos;day19_1/src/cn.itcast.metadata&apos;&#x0D;&#x0A;- Original project: &apos;day17&apos;&#x0D;&#x0A;- Destination element: &apos;day19_1/src/cn.itcast.metadata&apos;&#x0D;&#x0A;- Original element: &apos;cn.itcast.utils.JdbcUtil2.java&apos;" description="Copy compilation unit" destination="/src&lt;cn.itcast.metadata" element1="/src&lt;cn.itcast.utils{JdbcUtil2.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" log="/src&lt;cn.itcast.utils{JdbcUtil2.java&#x09;true&#x09;false" policy="org.eclipse.jdt.ui.copyResources" stamp="1501290502024" units="1" version="1.0"/>
+</session>

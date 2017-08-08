@@ -1,0 +1,10 @@
+package cn.itcast.mydbutils;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class MyBeanHandler implements MyResultSetHandler {
+	public Object handle(ResultSet rs) throws SQLException {
+
+	}
+}

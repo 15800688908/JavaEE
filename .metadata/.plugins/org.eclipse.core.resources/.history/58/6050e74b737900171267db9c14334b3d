@@ -1,0 +1,7 @@
+package cn.itcast.dao.impl;
+
+import cn.itcast.dao.IAdminDao;
+
+public class AdminDao implements IAdminDao{
+
+}

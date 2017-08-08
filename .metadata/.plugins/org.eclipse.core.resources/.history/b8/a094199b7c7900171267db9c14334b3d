@@ -1,0 +1,12 @@
+package cn.itcast.service.impl;
+
+import cn.itcast.entity.Admin;
+import cn.itcast.service.IAdminService;
+
+public class AdminService implements IAdminService {
+
+	public Admin findByNameAndPwd(Admin admin) {
+
+	}
+
+}

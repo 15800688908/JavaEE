@@ -1,0 +1,12 @@
+package cn.itcast.dao.impl;
+
+import cn.itcast.dao.IAdminDao;
+import cn.itcast.entity.Admin;
+
+public class AdminDao implements IAdminDao {
+
+	public Admin findByNameAndPwd(Admin admin) {
+		// return JdbcUtils.get();
+	}
+
+}

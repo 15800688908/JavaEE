@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;/day09/src/properties&apos; to &apos;db.properties&apos;&#x0D;&#x0A;- Original project: &apos;day09&apos;&#x0D;&#x0A;- Original element: &apos;properties&apos;" description="Rename resource &apos;properties&apos;" flags="7" id="org.eclipse.jdt.ui.rename.resource" input="src/properties" name="db.properties" stamp="1476701916900" version="1.0"/>
+</session>

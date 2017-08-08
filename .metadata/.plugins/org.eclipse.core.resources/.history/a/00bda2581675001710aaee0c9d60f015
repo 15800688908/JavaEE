@@ -1,0 +1,7 @@
+package cn.itcast.customer.tag;
+
+import javax.servlet.jsp.tagext.SimpleTagSupport;
+
+public class PageTag extends SimpleTagSupport {
+
+}

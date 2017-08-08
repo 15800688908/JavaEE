@@ -1,0 +1,4 @@
+Filter示例：servlet技术中最实用的技术；它就是一个接口，
+其有一个doFilter（）方法，需要在web.xml中配置
+自动登录（重点）URL级别权限控制 全局编码过滤器
+filter链：

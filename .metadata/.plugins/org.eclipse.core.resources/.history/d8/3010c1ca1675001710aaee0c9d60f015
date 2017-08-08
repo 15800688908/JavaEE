@@ -1,0 +1,27 @@
+package cn.itcast.customer.tag;
+
+import java.io.IOException;
+
+import javax.servlet.jsp.JspException;
+import javax.servlet.jsp.tagext.SimpleTagSupport;
+
+import cn.itcast.customer.domain.PageBean;
+
+public class PageTag extends SimpleTagSupport {
+	private PageBean pb;
+
+	public PageBean getPb() {
+		return pb;
+	}
+
+	public void setPb(PageBean pb) {
+		this.pb = pb;
+	}
+
+	@Override
+	public void doTag() throws JspException, IOException {
+		// TODO Auto-generated method stub
+		super.doTag();
+	}
+
+}

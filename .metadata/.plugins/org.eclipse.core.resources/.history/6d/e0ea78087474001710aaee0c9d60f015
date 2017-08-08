@@ -1,0 +1,12 @@
+package cn.itcast.customer.dao;
+
+import java.util.List;
+
+import cn.itcast.customer.domain.Customer;
+
+public class CustomerDao {
+public List<Customer> findAll(){
+	String sql="";
+	
+}
+}

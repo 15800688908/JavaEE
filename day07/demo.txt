@@ -1,0 +1,51 @@
+断点这行还没执行
+step over(F6) 跳过
+resume（F8） 跳到下一个断点
+step into(F5)跳入
+drop to frame 返回到开始位置调试
+step return(F7)跳出
+debug模式可以删除所有断点
+
+beforeClass方法是静态方法
+afterClass方法是静态方法
+@Test(timeout=100)性能测试
+
+JDK5.0新特性
+	泛型   在集合中使用（泛型擦除，泛型存在源代码的阶段，编译成class文件后，泛型被擦除）    
+	List Set Map
+	
+	 通用性高
+	 只有对象类型才能作为其参数
+
+枚举  String name() 返回枚举的名称
+	int ordianl() 返回枚举的下标志
+	static <T extends Enum<T>> T valueOf(Class<T> enumType,String name)  通过名称获取对象
+	
+	valueOf(String name )
+	values
+
+静态导入
+		import static xxx.xxx.xxx;
+	
+自动拆装箱
+	装箱：把基本类型转换成包装类
+	
+for/in 语句
+	抛弃迭代器，底层是迭代器实现
+	可以遍历数组    实现Iterator接口的集合。 List Set
+	
+可变参数只能处于参数列表最后，所以只能有一个可变参数
+
+
+反射 class类
+	类名，实例，Class.forName(路径)
+	可以获取类中的所有的内容(对外提供的都是对象Field,Method,Constructor)
+web.xml配置文件
+	<web-app>
+		<servlet>
+		<servlet-name>HelloServlet</servlet-name>
+		<servlet-class>cn.incast.servlet.HelloServlet</servlet-class>
+		</servlet>
+	</web-app>
+容器（服务器）启动，加载配置读取，解析，通过反射创建实例，拿到方法
+	加载.class文件，不能使用xxx.java文件	

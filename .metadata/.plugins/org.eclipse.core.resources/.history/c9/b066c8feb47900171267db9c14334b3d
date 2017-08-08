@@ -1,0 +1,5 @@
+package cn.itcast.web.filter;
+import javax.servlet.Filter;
+public class PrivilegeFilter implements Filter{
+
+}

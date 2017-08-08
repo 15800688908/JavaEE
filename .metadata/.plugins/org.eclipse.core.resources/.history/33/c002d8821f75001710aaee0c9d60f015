@@ -1,0 +1,25 @@
+满足特定条件的时候执行一个操作
+java web中监听器主要用于监听
+request(HttpServletRequest)，session(HttpSession),
+application(ServletContext)的
+三种类型操作
+1.对象的创建与销毁
+2.对象的属性变化
+3.session绑定javaBean
+
+在java web中servlet规范中定义了三种技术 servlet Listener Filter
+1.监听创建与销毁
+HttpServletRequest监听器ServletRequestListener
+HttpSession监听器HttpSessionListener
+ServletContext监听器ServletContextListener
+2.ServletRequestAttributeListener  
+HttpSessionAttributeListener
+ServletContextAttributeListener
+
+创建一个类去实现指定的监听器接口，重写方法，在web.xml中配置监听
+
+request.getSession()适用于获取session,是否创建，分情况
+1.请求头中没有jsessionid,那么就是创建session
+2.若有1如果在服务器端中有一个session的id值与其一样，不创建直接使用
+      2若没有，创建
+默认超时：session会销毁 设置session销毁时间 invalidate()手动销毁 关闭服务器

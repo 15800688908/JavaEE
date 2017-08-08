@@ -1,0 +1,16 @@
+package MyFrame;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class MyFrame extends JFrame {
+	private JButton but = new JButton("按钮");
+
+	public MyFrame() {
+
+	}
+
+	public static void main(String[] args) {
+		new MyFrame();
+	}
+}

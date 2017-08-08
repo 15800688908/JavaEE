@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 1 elements(s) to &apos;day13mvc/src/cn.itcast.action&apos;&#x0D;&#x0A;- Original project: &apos;day10&apos;&#x0D;&#x0A;- Destination element: &apos;day13mvc/src/cn.itcast.action&apos;&#x0D;&#x0A;- Original element: &apos;cn.itcast.response.CheckCodeServlet.java&apos;" description="Copy compilation unit" destination="/src&lt;cn.itcast.action" element1="/src&lt;cn.itcast.response{CheckCodeServlet.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" log="/src&lt;cn.itcast.response{CheckCodeServlet.java&#x09;true&#x09;false" policy="org.eclipse.jdt.ui.copyResources" stamp="1478086792590" units="1" version="1.0"/>
+</session>

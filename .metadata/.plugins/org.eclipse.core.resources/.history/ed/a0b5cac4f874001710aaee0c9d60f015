@@ -1,0 +1,12 @@
+<%@ page language="java" pageEncoding="UTF-8"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+	</head>
+	<body>
+		<a href="/day19_1/findAllByPage?currentPage=1"> <a
+			href="/day19_1/findAllByPage?currentPage=1"> <a
+				href="/day19_1/findAllByPage?currentPage=1"> <a
+					href="/day19_1/findAllByPage?currentPage=${pb.totalPage }">
+	</body>
+</html>

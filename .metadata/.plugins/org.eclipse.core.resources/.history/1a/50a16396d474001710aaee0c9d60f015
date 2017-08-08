@@ -1,0 +1,14 @@
+虚拟主机设置  可以将项目部署到顶级域名
+sever.xml 中端口修改为80 配置主机增加一个<Host>
+<Host name="www.customer.com" appBase="D:\java\workspace\day19">
+<Context path="" docBase="D:\java\wokspace\day19\WebRoot">
+
+wind32下面的host设置 127.0.0.1  www.customer.com
+myeclispe/web修改路径
+
+id是vachar类型，他的获取问题  UUID工具类来获取
+生日用日历组件 导入js在input组件上添加class和onclick
+
+直接使用js操作不用表单.submit(),需要手动拼接url
+
+select可以任意起名 option的value名称需要与customer表中的字段名称对应

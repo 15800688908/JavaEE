@@ -1,0 +1,20 @@
+<%@ page language="java" pageEncoding="UTF-8"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+	</head>
+	<body>
+		<a href="/day19_1/findAllByPage?PageNumber=1"></a>
+		<c:if test="${pb.pageNum==1 }">
+		上一页
+		</c:if>
+		<a href="/day19_1/findAllByPage?PageNumber=${pb.pageNum-1} "></a>
+		<c:if test="${pb.totalPage}">
+		下一页
+		</c:if>
+		<a href="/day19_1/findAllByPage?PageNumber=${pb.pageNum+1}"></a>
+		<a href="/day19_1/findAllByPage?PageNumber=${pb.totalPage }"></a>
+
+
+	</body>
+</html>

@@ -1,0 +1,9 @@
+package cn.itcast.utils;
+
+import javax.servlet.http.Cookie;
+
+public class CookieUtils {
+	public static Cookie findCookieByName(Cookie[] cs, String name) {
+
+	}
+}

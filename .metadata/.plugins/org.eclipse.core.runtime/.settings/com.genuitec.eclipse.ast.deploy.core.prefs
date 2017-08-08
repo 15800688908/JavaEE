@@ -1,0 +1,12 @@
+#Mon Oct 17 20:43:05 CST 2016
+tomcat6Server.day10.type=WebDeployment
+tomcat6Server.day10.isExploded=true
+tomcat6Server.day10.deployIsOverProject=false
+tomcat6Server.day10.isUptoDate=true
+tomcat6Server.day10.shouldOverwrite=false
+tomcat6Server.day10.deploymentPath=D\:\\tomcat\\apache-tomcat-7.0.70\\webapps\\day10
+tomcat6Server.day10.contextRoot=/day10
+tomcat6Server.day10.shouldBackup=false
+tomcat6Server.day10.isDeployed=true
+tomcat6Server.day10.earProjectName=
+eclipse.preferences.version=1

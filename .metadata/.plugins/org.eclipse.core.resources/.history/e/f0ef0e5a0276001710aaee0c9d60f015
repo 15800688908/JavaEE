@@ -1,0 +1,11 @@
+package cn.itcast.listener.demo;
+
+import javax.servlet.http.HttpSession;
+import javax.servlet.http.HttpSessionEvent;
+
+//用于监听session对象创建，如果创建了，将其保存到一个集合中
+public class MyHttpSessionListener {
+public void sessionCreated(HttpSessionEvent se){
+	HttpSession session=se.getSession();
+}
+}

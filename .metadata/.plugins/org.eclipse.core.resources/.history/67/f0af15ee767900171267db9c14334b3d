@@ -1,0 +1,7 @@
+package cn.itcast.service.impl;
+
+import cn.itcast.service.IEmployeeService;
+
+public class EmployeeService implements IEmployeeService {
+
+}

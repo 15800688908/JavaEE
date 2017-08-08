@@ -1,0 +1,13 @@
+package cn.itcast.customer.service;
+
+import java.util.List;
+
+import cn.itcast.customer.dao.CustomerDao;
+import cn.itcast.customer.domain.Customer;
+
+public class CustomerService {
+	private CustomerDao dao=new CustomerDao();
+public List<Customer> findAll(){
+	return dao.findAll();
+}
+}

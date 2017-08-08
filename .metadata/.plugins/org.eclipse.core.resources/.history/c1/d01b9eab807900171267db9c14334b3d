@@ -1,0 +1,5 @@
+package cn.itcast.web.filter;
+
+public class ImageCacheFilter {
+
+}

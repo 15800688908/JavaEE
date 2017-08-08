@@ -1,0 +1,8 @@
+package cn.itcast.customer.service;
+
+public class CustomerService {
+	private CustomerDao dao=new CustomerDao();
+public List<Customer> findAll(){
+	return 
+}
+}

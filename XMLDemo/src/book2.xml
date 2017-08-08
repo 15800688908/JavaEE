@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!-- 
+	*引入W3C名称空间，我是实例文档
+	*引入自己编写的schema文档
+	*元素上不能有相同的属性名称解决方案起别名:aa
+	*技巧：概率小的起别名
+	*引入自己编写的schema文档地址，schemaLocation属性namespace + schema地址
+ -->
+<书架 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 	xmlns="http://www.itcast.cn/1110"
+ 	xsi:schemaLocation="http://www.itcast.cn/1110 book2.xsd"
+ 	>
+	<书 出版社="qinghua">
+	<书名>Java web</书名>
+	<作者>班长</作者>
+	<售价>99</售价>
+	<简介></简介>
+	</书>
+	<书 出版社="qinghua">
+	<书名>Java web</书名>
+	<作者>班长</作者>
+	<售价>99</售价>
+	<简介></简介>
+	</书>
+</书架>

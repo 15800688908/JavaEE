@@ -1,0 +1,5 @@
+package cn.itcast.customer.service;
+
+public class CustomerService {
+
+}

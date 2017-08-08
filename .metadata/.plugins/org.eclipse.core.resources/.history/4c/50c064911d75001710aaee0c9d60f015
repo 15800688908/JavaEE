@@ -1,0 +1,8 @@
+<?xml?>
+<web-app>
+	<listener>
+		<listener-class>
+			cn.itcast.web.listener.applciation.MyServletContextListener
+		</listener-class>
+	</listener>
+</web-app>

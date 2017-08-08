@@ -1,0 +1,36 @@
+package cn.itcast.dbutils;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.ArrayHandler;
+import org.apache.commons.dbutils.handlers.ArrayListHandler;
+import org.apache.commons.dbutils.handlers.BeanHandler;
+import org.junit.Test;
+
+import cn.itcast.domain.Account;
+import cn.itcast.utils.DataSourceUtils;
+
+public class ResultSetHandlerImplTest {
+	@Test
+	public void fun1() throws SQLException {
+		QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
+		// 将结果集中第一条记录封装到Object[]
+		Object[] obj = runner.query("", new ArrayHandler());
+	}
+
+	@Test
+	public void fun2() throws SQLException {
+		QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
+		// List每一条记录都封装进去
+		List<Object[]> obj = runner.query("", new ArrayListHandler());
+	}
+
+	@Test
+	public void fun3() throws SQLException {
+		QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
+		// 将结果集中第一条记录封装到javabean中
+		Account obj = runner.query("", new BeanHandler<Account>(Account.class));
+	}
+}

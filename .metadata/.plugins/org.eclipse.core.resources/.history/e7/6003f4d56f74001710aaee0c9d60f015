@@ -1,0 +1,5 @@
+package cn.itcast.customer.servlet;
+
+public class MyServlet {
+
+}

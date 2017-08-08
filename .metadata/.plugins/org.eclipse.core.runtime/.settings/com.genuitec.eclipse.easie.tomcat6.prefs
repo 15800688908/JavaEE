@@ -1,0 +1,11 @@
+#Tue Oct 11 10:10:00 CST 2016
+PREPEND_CLASSPATH1=D\:\\tomcat\\apache-tomcat-7.0.70\\bin\\tomcat-juli.jar
+TOMCAT_HOME=D\:\\tomcat\\apache-tomcat-7.0.70
+TOMCAT_TEMP=D\:\\tomcat\\apache-tomcat-7.0.70\\temp
+LIBRARY_PATH="E\:\\hssource\\honeycomb\\jdk1.7.0\\jdk1.7.0_51\\bin;D\:\\tomcat\\apache-tomcat-7.0.70\\bin"
+TOMCAT_BASE=D\:\\tomcat\\apache-tomcat-7.0.70
+ENDORSED_DIRS="D\:\\tomcat\\apache-tomcat-7.0.70/common/endorsed"
+eclipse.preferences.version=1
+JDK_INSTALLATION_NAME=jdk1.7.0_51
+SERVER_ENABLEMENT=true
+JDK_HOME=E\:\\hssource\\honeycomb\\jdk1.7.0\\jdk1.7.0_51

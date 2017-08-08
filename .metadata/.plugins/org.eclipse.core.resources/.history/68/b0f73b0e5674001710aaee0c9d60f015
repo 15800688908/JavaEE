@@ -1,0 +1,18 @@
+package cn.itcast.mydbutils;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class MyBeanHandler implements MyResultSetHandler {
+	private Class clazz;
+
+	public MyBeanHandler(Class clazz) {
+		this.clazz = clazz;
+	}
+
+	public Object handle(ResultSet rs) throws SQLException {
+		try{
+			BeanInfo bif=Introspector.
+		}
+	}
+}

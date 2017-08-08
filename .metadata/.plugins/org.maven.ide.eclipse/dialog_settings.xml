@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="TestMaven"/>
+			<item value="dshtr"/>
+			<item value="day21"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+		<list key="artifactId">
+			<item value="TestMaven"/>
+			<item value="dshtr"/>
+			<item value="day21"/>
+		</list>
+	</section>
+</section>

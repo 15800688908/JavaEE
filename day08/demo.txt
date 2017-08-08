@@ -1,0 +1,63 @@
+服务器的介绍
+	原理：网络编程
+	默认端口号：80（默认也会消失）
+weblogic BEA公司开放的（Oracle收购了）收费了 支持javaee所有
+的规范（EJB servlet/jsp）
+
+websphere IBM公司开发的 银行喜欢用
+
+tomcat apache公司只支持servlet/jsp
+tomcat安装和注意，（前提条件）安装JDK，配置Java的环境变量。
+安装版（客户用）解析版的
+
+常见的启动问题
+	配置环境变量，一闪而过环境变量没配置好
+	端口占有问题 结束掉占用端口的应用程序。netstat -ano(javaw结束掉)
+	修改端口号：修改配置文件tomcat/conf/server.xml配置文件
+	有的win7自带的 world wide web publish IIS服务，默认端口是80
+如果有，去服务中，手动启动
+
+操作系统占有的话就蛋疼了
+
+TOMCAT目录结构 work jsp翻译成servlet程序
+如果是动态的web资源，把web资源发布到webapps，有固定的目录结构
+Servlet/JSP只要包含，就称为动态website->WEB-INF->web.xml
+(classes lib)可选
+
+虚拟路径（webroot）;访问路径,默认和项目名称一样
+直接复制web项目，需要修改虚拟路径，web属性
+管理员的配置tomcat-user.xml修改配置文件，必须重启
+如何部署web程序（三种）
+	项目复制到webapps下
+	通过配置虚拟路径的方式（直接修改配置文件或者自己编写配置文件）
+server.xml下host中<Context docBase="文件夹真实目录"path="/虚拟路径"></Context>
+	目的：通过配置，准确找到文件,真实路径workspace虚拟路径可以自己写
+	
+自定义xxx.xml，把xxx当成（虚拟）访问路径
+tomcat/conf/在server.xml中找到/Catalina/localhost/ccc.xml
+<Context docBase=""></Context>
+钓鱼网站：DNS域名解析器hosts文件里面找	
+
+http协议：超文本传输协议，基于TCP链接的传输协议，
+80端口，基于请求和响应，使用telnet命令（系统要先开启）
+ctrl+]解决乱码  GET /AA/1.html HTTP/1.1
+				host:localhost
+http/1.0 链接后，只能获取一个web资源，响应之后立马断开
+http/1/1 可以获得多个web资源	
+请求头最后有一个空行是http协议数据规范
+GET提交，不支持大数据
+POST提交(无参数列表)封装到了请求体中了（文件上传）
+If-Modified-Since 必须和响应头信息一起来控制本地缓存
+Referer 当前的网页来源，（防止盗链） user-agent当前浏览器版本(文件下载时使用)
+
+响应：302请求重定向（又发了一次请求另外）
+转发，找班长借钱，他自己找副班长借钱，然后给我了，
+	304服务端资源没有改动，通知客户端查找本地缓存
+	404客户端访问资源不存在
+	500服务器内部出错
+Location 和302一起完成重定向，Last-Modified和请求头If-Modified-Since一起
+控制缓存，和状态码304
+Referer 完成页面的定时跳转
+Content-Disposition 设置文件是以附近打开
+
+禁用缓存（网银系统）Expires:-1,Cache-Control:no-cache,Pragma:no-cache

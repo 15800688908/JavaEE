@@ -1,0 +1,7 @@
+package cn.itcast.listener.request;
+
+import javax.servlet.ServletRequestListener;
+
+public class MyRequestListener implements ServletRequestListener {
+
+}
